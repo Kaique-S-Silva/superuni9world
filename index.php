@@ -2,7 +2,7 @@
 
 <main>
     <?php
-    $aba = $_GET['aba'] ?? 'homepage'; // Define 'jogo' como aba padrão
+    $aba = $_GET['aba'] ?? 'homepage'; // Define 'homepage' como aba padrão
     $arquivo = "pages/{$aba}.php";
 
     if (file_exists($arquivo)) {

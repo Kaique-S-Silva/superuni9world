@@ -7,10 +7,4 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.php?aba=homepage">Home</a>
-            <a href="index.php?aba=game">Jogo</a>
-            <a href="index.php?aba=feedback">Feedback</a>
-            <a href="cadastro.php">Cadastro</a>
-        </nav>
     </header>
