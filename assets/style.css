@@ -1,16 +1,41 @@
-body {
-    font-family: sans-serif;
-    background: #1a1a1a;
-    color: #fff;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+:root {
+    /* ----------
+       Paleta de cores e variáveis globais
+       ---------- */
+    --bg-deep: #0f172a;       /* Fundo principal escuro */
+    --bg-card: #1e293b;       /* Fundo dos cards e campos */
+    --accent-blue: #2563eb;   /* Principal cor de destaque */
+    --accent: #2563eb;        /* Cor de acento usada em bordas e focos */
+    --text-primary: #f8fafc;  /* Texto principal claro */
+    --text-main: #e2e8f0;     /* Texto de formulários e conteúdo */
+    --text-muted: #94a3b8;    /* Texto secundário / descrições */
+    --border: rgba(255, 255, 255, 0.08); /* Borda sutil para elementos */
+    --radius: 16px;           /* Raio padrão para cantos arredondados */
 }
 
+/* ----------
+   Reset e estilo base
+   ---------- */
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-deep);
+    color: var(--text-primary);
+}
+
+/* ----------
+   Cabeçalho e navegação
+   ---------- */
 header {
-    background: #111;
-    padding: 20px 0;
-    border-bottom: 1px solid #333;
+    background: rgba(17, 17, 17, 0.8);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border);
 }
 
 nav {
@@ -30,10 +55,13 @@ nav a {
 }
 
 nav a:hover {
-    background: rgba(255,255,255,.08);
+    background: rgba(255, 255, 255, 0.08);
     border-color: #666;
 }
 
+/* ----------
+   Conteúdo principal
+   ---------- */
 main {
     padding: 40px 20px;
     max-width: 1200px;
@@ -42,11 +70,11 @@ main {
 
 #home-hero {
     padding: 80px 20px;
+    min-height: 520px;
+    margin-bottom: 40px;
+    border-radius: var(--radius);
     background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(17, 24, 39, 0.85)), url('../assets/banner.png') no-repeat center top;
     background-size: contain;
-    min-height: 520px;
-    border-radius: 16px;
-    margin-bottom: 40px;
 }
 
 .hero-content {
@@ -55,8 +83,8 @@ main {
 }
 
 #home-hero h1 {
-    font-size: clamp(2.5rem, 4vw, 4rem);
-    margin-bottom: 20px;
+    font-weight: 800;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
 
 #home-hero p {
@@ -73,6 +101,9 @@ main {
     flex-wrap: wrap;
 }
 
+/* ----------
+   Botões principais
+   ---------- */
 .button,
 .button-secondary {
     display: inline-block;
@@ -84,12 +115,13 @@ main {
 }
 
 .button {
-    background: #2563eb;
+    background: linear-gradient(135deg, var(--accent-blue), #1d4ed8);
     color: #fff;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
 }
 
 .button-secondary {
-    background: rgba(255,255,255,.08);
+    background: rgba(255, 255, 255, 0.08);
     color: #fff;
 }
 
@@ -98,6 +130,9 @@ main {
     transform: translateY(-2px);
 }
 
+/* ----------
+   Seção de recursos / cards
+   ---------- */
 #home-features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -105,11 +140,17 @@ main {
 }
 
 .feature-card {
-    background: #111;
-    border: 1px solid #222;
-    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius);
     padding: 30px;
-    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    border-color: rgba(37, 99, 235, 0.5);
+    transform: translateY(-5px);
 }
 
 .feature-card h2 {
@@ -123,12 +164,28 @@ main {
     line-height: 1.7;
 }
 
+/* ----------
+   Área de jogo
+   ---------- */
 #game-area {
-    margin: 20px auto;
-    width: 800px;
-    border: 5px solid #333;
+    margin: 40px auto;
+    max-width: 100%;
+    width: 640px;
+    background: #000;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
+#game-area iframe {
+    display: block;
+    width: 100%;
+}
+
+/* ----------
+   Formulários e campos de entrada
+   ---------- */
 form {
     display: flex;
     flex-direction: column;
@@ -137,21 +194,101 @@ form {
     gap: 10px;
 }
 
-input, textarea {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--bg-card);
+    color: var(--text-main);
+    transition: border-color 0.2s;
 }
 
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* ----------
+   Itens de destaque
+   ---------- */
 .item {
-    background: #333;
-    margin: 10px auto;
-    padding: 10px;
-    width: 500px;
-    border-left: 4px solid #fa5c5c;
-    text-align: left;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    margin: 15px auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    transition: transform 0.2s;
 }
 
+.item:hover {
+    transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 30px 16px;
+    }
+
+    #home-hero {
+        padding: 60px 16px;
+        min-height: 420px;
+    }
+
+    .hero-actions {
+        gap: 14px;
+    }
+
+    .button,
+    .button-secondary {
+        padding: 12px 22px;
+    }
+
+    form {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .item {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        padding: 10px 14px;
+    }
+
+    #home-hero {
+        padding: 40px 16px;
+        background-size: cover;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button,
+    .button-secondary {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* ----------
+   Rodapé
+   ---------- */
 footer {
     padding: 20px 0;
     border-top: 1px solid #333;
