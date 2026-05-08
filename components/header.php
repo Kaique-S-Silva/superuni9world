@@ -11,9 +11,10 @@
 <body>
     <header>
         <div class="header-inner">
-            <a class="brand" href="index.php?aba=homepage">Super UNI9 World</a>
+            <a class="brand" href="index.php?aba=homepage">
+                <img src="assets/logo.png" alt="Logo Super UNI9 World">
+            </a>
             <nav aria-label="Menu principal">
-                <a href="index.php?aba=homepage">Início</a>
                 <a href="index.php?aba=game">Jogo</a>
                 <a href="index.php?aba=wiki">Wiki</a>
                 <a href="index.php?aba=contact">Contato</a>
