@@ -167,22 +167,21 @@ main {
 /* ----------
    Área de jogo
    ---------- */
-#game-area {
-    margin: 40px auto;
-    max-width: 100%;
-    width: 640px;
-    background: #000;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    overflow: hidden;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+#game-area .game-header h2 {
+    margin: 0;
+    padding: 20px;
+    /* background: rgba(255, 255, 255, 0.08); */
+    border-bottom: 1px solid var(--border);
+    color: #fff;
 }
 
-#game-area iframe {
-    display: block;
-    width: 100%;
+#game-area .game-header p {
+    margin: 0;
+    padding: 20px;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    /* background: rgba(255, 255, 255, 0.08); */
 }
-
 /* ----------
    Formulários e campos de entrada
    ---------- */
