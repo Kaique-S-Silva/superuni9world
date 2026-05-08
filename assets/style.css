@@ -1,6 +1,6 @@
 :root {
     /* ----------
-       Paleta de cores e variáveis globais
+       Definição de variáveis CSS customizadas: Define cores, fundos, textos e outros valores globais para manter consistência visual no site.
        ---------- */
     --bg-deep: #0f172a;       /* Fundo principal escuro */
     --bg-card: #1e293b;       /* Fundo dos cards e campos */
@@ -14,7 +14,7 @@
 }
 
 /* ----------
-   Reset e estilo base
+   Reset e estilo base: Remove margens padrão do navegador e define estilos fundamentais para o body, como fonte, cor de fundo e comportamento de rolagem.
    ---------- */
 body {
     margin: 0;
@@ -27,7 +27,7 @@ body {
 }
 
 /* ----------
-   Animações gerais
+   Animações gerais: Define keyframes para efeitos visuais como pulso azul, fade in de baixo para cima e entrada do header.
    ---------- */
 @keyframes pulse-blue {
     0% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.7); }
@@ -58,7 +58,7 @@ body {
 }
 
 /* ----------
-   Cabeçalho e navegação
+   Cabeçalho e navegação: Estiliza o header com fundo transparente e blur, além do layout flexível para logo e menu, com efeitos de hover.
    ---------- */
 header {
     background: transparent;
@@ -153,7 +153,7 @@ nav a:hover::after {
 }
 
 /* ----------
-   Área principal do site
+   Área principal do site: Define o layout para a tag main, seção hero com background e gradiente, e ações do hero.
    ---------- */
 main {
     padding: 60px 20px 40px;
@@ -195,7 +195,7 @@ main {
 }
 
 /* ----------
-   Botões principais
+   Botões principais: Estiliza botões primários e secundários com gradientes, sombras, animações de pulso e efeitos de hover.
    ---------- */
 .button,
 .button-secondary {
@@ -231,7 +231,7 @@ main {
 }
 
 /* ----------
-   Seção de recursos / cards
+   Seção de recursos / cards: Layout em grid responsivo para cards de recursos, com backdrop blur, animações de fade in e efeitos de hover.
    ---------- */
 #home-features {
     display: grid;
@@ -271,7 +271,7 @@ main {
 }
 
 /* ----------
-   Área de jogo
+   Área de jogo: Estiliza o cabeçalho da área de jogo com borda inferior e cores específicas.
    ---------- */
 #game-area .game-header h2 {
     margin: 0;
@@ -288,7 +288,7 @@ main {
 }
 
 /* ----------
-   Formulários e campos de entrada
+   Formulários e campos de entrada: Layout flexível para forms, e efeitos de foco para inputs e textareas com transições suaves.
    ---------- */
 form {
     display: flex;
@@ -310,7 +310,7 @@ input:focus, textarea:focus {
 }
 
 /* ----------
-   Itens de destaque
+   Itens de destaque: Estiliza itens com fundo, borda esquerda azul e efeito de hover com translação lateral.
    ---------- */
 .item {
     background: var(--bg-card);
@@ -329,7 +329,7 @@ input:focus, textarea:focus {
 }
 
 /* ----------
-   Regras responsivas
+   Regras responsivas: Ajustes de layout para telas menores, incluindo padding, tamanhos e orientações flex.
    ---------- */
 @media (max-width: 768px) {
     main {
@@ -387,7 +387,7 @@ input:focus, textarea:focus {
 }
 
 /* ----------
-   Rodapé
+   Rodapé: Estiliza o footer com padding, borda superior e margem.
    ---------- */
 footer {
     padding: 20px 0;

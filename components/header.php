@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Meta tags e links: Define charset, título da página, pré-carregamento de fontes Google e link para o CSS personalizado. -->
     <meta charset="UTF-8">
     <title>Super UNI9 World</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+    <!-- Header principal: Contém o logo da marca e o menu de navegação com links para as páginas. -->
     <header>
         <div class="header-inner">
             <a class="brand" href="index.php?aba=homepage">

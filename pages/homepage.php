@@ -1,3 +1,4 @@
+<!-- Página inicial: Seção hero com título de boas-vindas, descrição e botão para jogar, seguida de cards destacando recursos do jogo. -->
 <section id="home-hero">
     <div class="hero-content">
         <h1>Bem-vindo ao Super UNI9 World</h1>

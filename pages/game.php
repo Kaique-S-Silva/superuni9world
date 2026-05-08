@@ -1,4 +1,4 @@
-<!-- Área do Jogo -->
+<!-- Seção do jogo: Exibe o título e descrição do jogo, seguido de um iframe incorporado do jogo hospedado no Itch.io. -->
 <section id="game-area">
     <div class="game-title">
         <h2>Super UNI9 World</h2>
