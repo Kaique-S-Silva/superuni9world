@@ -19,7 +19,6 @@
             <nav aria-label="Menu principal">
                 <a href="index.php?aba=game">Jogo</a>
                 <a href="index.php?aba=wiki">Wiki</a>
-                <a href="index.php?aba=contact">Contato</a>
             </nav>
         </div>
     </header>
