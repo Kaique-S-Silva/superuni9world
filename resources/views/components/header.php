@@ -13,12 +13,12 @@
     <!-- Header principal: Contém o logo da marca e o menu de navegação com links para as páginas. -->
     <header>
         <div class="header-inner">
-            <a class="brand" href="index.php?aba=homepage">
+            <a class="brand" href="index.php?page=homepage">
                 <img src="assets/logo.png" alt="Logo Super UNI9 World">
             </a>
             <nav aria-label="Menu principal">
-                <a href="index.php?aba=game">Jogo</a>
-                <a href="index.php?aba=wiki">Wiki</a>
+                <a href="index.php?page=game">Jogo</a>
+                <a href="index.php?page=wiki">Wiki</a>
             </nav>
         </div>
     </header>

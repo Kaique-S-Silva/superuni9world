@@ -4,7 +4,7 @@
         <h1>Bem-vindo ao Super UNI9 World</h1>
         <p>Explore o jogo e mergulhe em uma experiência interativa que une diversão e aprendizado.</p>
         <div class="hero-actions">
-            <a class="button" href="index.php?aba=game">Jogar Agora</a>
+            <a class="button" href="index.php?page=game">Jogar Agora</a>
         </div>
     </div>
 </section>
