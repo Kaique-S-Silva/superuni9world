@@ -8,29 +8,30 @@ O jogo está hospedado gratuitamente na plataforma [Itch.io](https://itch.io/), 
 ## Funcionalidades do Site
 - **Página Inicial**: Apresenta uma seção hero com banner atrativo, descrição do jogo e botão para jogar. Inclui cards destacando recursos como jogabilidade interativa e design moderno.
 - **Página do Jogo**: Incorpora o jogo via iframe do Itch.io, com título e descrição explicativa.
-- **Wiki**: Seção dedicada a guias e documentação (atualmente com placeholder).
-- **Contato**: Página para informações de contato (atualmente com placeholder).
 - **Página de Erro**: Tratamento de páginas não encontradas com redirecionamento amigável.
 
 ## Estrutura do Projeto
 ```
 my-game/
-├── index.php                 # Arquivo principal que gerencia o roteamento
-├── dockerfile                # Configuração para containerização com Docker
-├── README.md                 # Este arquivo
-├── assets/
-│   ├── style.css             # Estilos CSS com design escuro e responsivo
-│   ├── logo.png              # Logo da marca Super UNI9 World
-│   └── banner.png            # Banner usado na seção hero
-├── components/
-│   ├── header.php            # Cabeçalho com navegação
-│   └── footer.php            # Rodapé com copyright
-└── pages/
-    ├── homepage.php          # Página inicial
-    ├── game.php              # Página do jogo com iframe
-    ├── wiki.php              # Página da wiki
-    ├── contact.php           # Página de contato
-    └── error.php             # Página de erro 404
+├── Dockerfile                 # Configuração para containerização com Docker
+├── README.md                  # Este arquivo
+├── public/
+│   ├── index.php              # Arquivo principal que gerencia o roteamento
+│   └── assets/
+│       ├── style.css          # Estilos CSS com design escuro e responsivo
+│       ├── logo.png           # Logo da marca Super UNI9 World
+│       └── banner.png         # Banner usado na seção hero
+└── resources/
+    └── views/
+        ├── components/
+        │   ├── header.php     # Cabeçalho com navegação
+        │   └── footer.php     # Rodapé com copyright
+        └── pages/
+            ├── homepage.php   # Página inicial
+            ├── game.php       # Página do jogo com iframe
+            ├── wiki.php       # Página da wiki
+            ├── contact.php    # Página de contato
+            └── error.php      # Página de erro 404
 ```
 
 ## Tecnologias Utilizadas
