@@ -18,7 +18,6 @@
             </a>
             <nav aria-label="Menu principal">
                 <a href="index.php?page=game">Jogo</a>
-                <a href="index.php?page=wiki">Wiki</a>
             </nav>
         </div>
     </header>
