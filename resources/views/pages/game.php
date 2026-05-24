@@ -8,9 +8,10 @@
     
     <iframe 
     frameborder="0" 
-    src="https://itch.io/embed-upload/17423334?color=000000"
-    width="1100" 
-    height="700">
+    src="https://itch.io/embed-upload/17655177?color=333333" 
+    allowfullscreen="" 
+    width="500" 
+    height="320">
     <a href="https://merthiz.itch.io/superuni9world">Play my-game on itch.io</a>
     </iframe>
     
