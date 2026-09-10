@@ -1,54 +1,47 @@
 # Super UNI9 World - Site Oficial
 
-## Descrição
-Bem-vindo ao site oficial do **Super UNI9 World**, um emocionante jogo de plataforma 2D desenvolvido para proporcionar diversão e aprendizado. Este site serve como portal para acessar o jogo, explorar sua wiki, entrar em contato e descobrir mais sobre o universo do jogo.
+O jogo foi o **Projeto Integrador** realizado no 4° semestre do meu bacharelado de Ciências da Computação na Uninove.
 
-O jogo está hospedado gratuitamente na plataforma [Itch.io](https://itch.io/), permitindo que os jogadores mergulhem em desafios interativos diretamente no navegador.
+A ideia é um jogo de plataforma 2D, inspirado no **Super Mário World** de Super Nintendo.
 
-## Funcionalidades do Site
-- **Página Inicial**: Apresenta uma seção hero com banner atrativo, descrição do jogo e botão para jogar. Inclui cards destacando recursos como jogabilidade interativa e design moderno.
-- **Página do Jogo**: Incorpora o jogo via iframe do Itch.io, com título e descrição explicativa.
-- **Página de Erro**: Tratamento de páginas não encontradas com redirecionamento amigável.
+## Objetivo
+O jogo tem como objetivo demonstrar as dificuldades dos alunos enquanto tentam seguir com seu curso na universidade.
 
 ## Estrutura do Projeto
 ```
 my-game/
-├── Dockerfile                 # Configuração para containerização com Docker
-├── README.md                  # Este arquivo
+├── Dockerfile
+├── README.md
 ├── public/
-│   ├── index.php              # Arquivo principal que gerencia o roteamento
+│   ├── index.php
 │   └── assets/
-│       ├── style.css          # Estilos CSS com design escuro e responsivo
-│       ├── logo.png           # Logo da marca Super UNI9 World
-│       └── banner.png         # Banner usado na seção hero
+│       ├── style.css
+│       ├── logo.png
+│       └── banner.png
 └── resources/
     └── views/
         ├── components/
-        │   ├── header.php     # Cabeçalho com navegação
-        │   └── footer.php     # Rodapé com copyright
+        │   ├── header.php
+        │   └── footer.php 
         └── pages/
-            ├── homepage.php   # Página inicial
-            ├── game.php       # Página do jogo com iframe
-            ├── wiki.php       # Página da wiki
-            ├── contact.php    # Página de contato
-            └── error.php      # Página de erro 404
+            ├── homepage.php
+            ├── game.php
+            ├── wiki.php
+            ├── contact.php
+            └── error.php
 ```
+O projeto está dividido em:
+- public/ - Roteamento e layout das páginas
+- assets/ - Pasta de assets com a estilização e imagens utilizadas.
+- resources/views/components/ - Componentes padrão do layout.
+- resources/views/pages/ - Páginas do site.
 
 ## Tecnologias Utilizadas
 - **PHP**: Para o backend e inclusão dinâmica de páginas.
-- **HTML5**: Estrutura semântica das páginas.
-- **CSS3**: Estilos modernos com variáveis customizadas, animações e responsividade.
-- **Docker**: Containerização para fácil deployment.
+- **HTML5/CSS** Para estrutura e estilização das páginas.
+- **Docker**: Containerização para facilidades dos testes
 - **Itch.io**: Plataforma de hospedagem do jogo.
 
-## Acesso ao Site
+## Como acessar
 O site está hospedado no Render e pode ser acessado diretamente em: [https://superuni9.onrender.com](https://superuni9.onrender.com).
-
-
-## Imagens e Assets
-- **Logo**: `assets/logo.png` - Ícone da marca usado no header.
-- **Banner**: `assets/banner.png` - Imagem de fundo para a seção hero, aplicada via CSS com gradiente.
-- Outros assets podem ser adicionados conforme necessário.
-
-## Hospedagem e Deployment
-O site está hospedado no [Render](https://render.com/) em https://superuni9.onrender.com. O jogo em si é hospedado gratuitamente na plataforma [Itch.io](https://itch.io/).
+O jogo está hospedado no itch.io. O site apenas faz a indexação via iframe.
